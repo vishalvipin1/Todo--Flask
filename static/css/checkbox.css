@@ -10,7 +10,7 @@
     border-color: #777;
     background-color: #e6e6e6;
 }
-.checkbox-animated input[type="checkbox"]:disabled ~ label .check {
+.checkbox-animatdd input[type="checkbox"]:disabled ~ label .check {
     border-color: #777;
 }
 .checkbox-animated input[type="checkbox"]:checked ~ label .box {
