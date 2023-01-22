@@ -45,5 +45,5 @@ $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip({ trigger: "hover" });
     });
     checkEmptyList();
-    // console.log($("tasks-section").children()["length"]);
+    
 });

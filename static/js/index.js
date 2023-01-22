@@ -39,7 +39,7 @@ function enableLabelClick() {
     $(document).on("click", "label", function () {
         $(this).toggleClass("strike");
         let id = $(this).attr("for");
-        // console.log(id);
+        
         setTimeout(() => {
             $(this).hide();
             $.ajax({
@@ -49,9 +49,9 @@ function enableLabelClick() {
                 dataType: "json",
                 contentType: "application/json",
                 success: function (res) {
-                    // $(this).parent().remove();
+                    
                     document.getElementById(id).parentElement.remove();
-                    // $(this).parents().first().remove();
+                    
                     setTimeout(() => {
                         checkEmptyList();
                     }, 100);
@@ -115,5 +115,5 @@ $(document).ready(function () {
     enableAddTasks();
     enableLabelClick();
     checkEmptyList();
-    // console.log($("tasks-section").children()["length"]);
+    
 });
